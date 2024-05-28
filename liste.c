@@ -43,6 +43,8 @@ Node* createTeamList(FILE* fin, int nr_echipe){
             buff[len - 1] = '\0'; // adagugam \0 la finalul stringului care are spatiu alb
         teams[i].nume_echipa = strdup(buff); // alocam memorie si copiem ce e in buff in teams[i].nume_echipa
         teams[i].pozitie = i;
+        teams[i].victorii = 0;
+        teams[i].prestigiu = 0;
         addTeamAtBeginning(&head, teams[i]);  // adaugam echipa la inceputul listei
     }
     return head;

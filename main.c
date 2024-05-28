@@ -1,7 +1,6 @@
 #include "struct.h"
 
 
-
 int main(int argc, char* argv[]){
     FILE* fin, *fout1, *fout2;
     
