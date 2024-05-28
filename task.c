@@ -85,8 +85,8 @@ void task(FILE* fin, FILE* fout1, FILE* fout2){
     
     Queue* winnersQueue = createQueue();
     Queue* losersQueue = createQueue();
-    int l = nr_runde + 1;
-    float Q = 0.15;
+    int l = nr_runde + 1; // numarul de meciuri necesare castigarii campionatului
+    float Q = 0.15; //  parametru prin care se stabileste importanta numarului de victorii in scorul final
     for(int i = 0; i < nr_runde; i++){
         playMatches(q, winnersQueue, losersQueue, G, fout1, i, nr_runde, NR_ECHIPE, l, Q);
         while(!isQueueEmpty(winnersQueue)){
